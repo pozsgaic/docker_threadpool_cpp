@@ -10,3 +10,8 @@ Docker test - Modern C++ thread pool
 #  cd cppbase && docker build . -t cppbase:1.0.0
 #  cd cppboost && docker build . -t cppboost:1.0.0
 #  docker build . -t threadpool_test:1.0.0
+```mermaid
+graph G;
+    cppbase-->cppboost;;
+    cppboost-->threadpool_test;
+```
